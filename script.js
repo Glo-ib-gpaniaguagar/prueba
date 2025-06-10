@@ -1,11 +1,29 @@
-var nameArray = [];
+var nameArray = [
+'Lucía García Iñarra', 
+'Jesus Ruiz Quijano',
+'Pablo Laya Lloreda',
+'Ramon Fernandez Aparicio Susperregui', 
+'Ivan Pena Huguet',
+'Juan Carlos Crespo Gimenez',
+'Ruben Diaz Ruiz',
+'Alvaro Moreiro Jorge',
+'Jimena Arranz Herrera',
+'Johans Jacob Susarte Munos', 
+'LeonardoGonzalo Gallardo', 
+'Luz Mileny Buritica Gonzalez', 
+'Javier Ignacio Morera Sese',  
+'Pablo Diaz Redondo', 
+'Carlota Cordero Del Burgo', 
+'Starlyn Gonzalez Cervantes',
+];
 
 $("#pick").click(function() {
     // Get the input value
   var names = document.getElementById("names").value;
   
   // Seperate the names and push them into the array
-  var nameArray = names.split(',');
+    
+  // var nameArray = names.split(',');
   
   // Get a random name, the winner
   var winner = nameArray[Math.floor(Math.random()*nameArray.length)];

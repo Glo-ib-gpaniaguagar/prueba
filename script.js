@@ -1,9 +1,6 @@
 var nameArray = [];
-const pick = document.getElementById("pick");
-    const world = document.getElementById("world");
-    const winner = document.getElementById("winner");
-    const close = document.getElementById("close");
-pick.click(function() {
+
+$("#pick").click(function() {
     // Get the input value
   var names = document.getElementById("names").value;
   
@@ -14,19 +11,18 @@ pick.click(function() {
   var winner = nameArray[Math.floor(Math.random()*nameArray.length)];
   
   winner = "🎉" + " " + winner + " " + "🎉";
-
-
+  
   // Display winner
-  world.addClass("open");
-  winner.addClass("open");
-  close.addClass("open");
-  winner.text(winner);
+  $("#world").addClass("open");
+  $("#winner").addClass("open");
+  $("#close").addClass("open");
+  $("#winner").text(winner);
 });
   
-close.click(function() {
-  world.removeClass("open");
-  winner.removeClass("open");
-  close.removeClass("open");
+$("#close").click(function() {
+  $("#world").removeClass("open");
+  $("#winner").removeClass("open");
+  $("#close").removeClass("open");
 });
 
 // Confetti

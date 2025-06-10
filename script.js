@@ -1,6 +1,6 @@
 var nameArray = [];
-
-$("#pick").click(function() {
+const elem = document.getElementById("pick");
+elem.click(function() {
     // Get the input value
   var names = document.getElementById("names").value;
   
